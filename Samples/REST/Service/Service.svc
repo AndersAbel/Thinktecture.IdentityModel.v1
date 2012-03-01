@@ -1,0 +1,3 @@
+﻿<%@ ServiceHost Language="C#" 
+                Factory="Thinktecture.IdentityModel.Web.FederatedWebServiceHostFactory, Thinktecture.IdentityModel" 
+                Service="Service.Service" %>

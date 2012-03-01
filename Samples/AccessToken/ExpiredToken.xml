@@ -1,0 +1,22 @@
+<AccessToken id="urn:uuid:2f0418bc-e682-4a6e-80c0-4ebf5cdab419" xmlns="http://www.thinktecture.com/tokens/accesstoken">
+  <resource>http://tecteacher.thinktecture.com/videos/1</resource>
+  <subject>bob</subject>
+  <expires>2009-10-18T10:37:18.529Z</expires>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+      <Reference URI="">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <DigestValue>M4BsLf3CDgJ7Q/UY+imrRcxhSgc=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>ZAx53MqEG8pRvveqKX66ahwFfZx3fgRdgpCf2Ck8i2aryJe+kE0IL+aMwT2u6gTkozM02058Z6BkqsJD9g1VIfDJYFxzgFGwDc2vBjK2phFhO+By3Px8VXTz7ttIStXhTEtUwugjbw1fZ7nV//spPvywBqbCbzQ87og9whZEgmU=</SignatureValue>
+    <KeyInfo>
+      <KeyName>g6uBJf+gasBqa/8trmpR0wkqJB8=</KeyName>
+    </KeyInfo>
+  </Signature>
+</AccessToken>
