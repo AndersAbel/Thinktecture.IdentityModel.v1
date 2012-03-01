@@ -65,13 +65,6 @@
     <Compile Include="Tokens\SamlClientCredentials.cs" />
     <Compile Include="Tokens\SamlSecurityTokenManager.cs" />
     <Compile Include="Tokens\SamlSecurityTokenProvider.cs" />
-    <Compile Include="Web\FederatedWebClientExtensions.cs" />
-    <Compile Include="Web\FederatedWebServiceAuthorizationManager.cs" />
-    <Compile Include="Web\FederatedWebServiceHostFactory.cs" />
-    <Compile Include="Web\SimpleWebToken.cs" />
-    <Compile Include="Web\SimpleWebTokenRequirement.cs" />
-    <Compile Include="Web\WebClientTokenTypes.cs" />
-    <Compile Include="Web\WrapClient.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Thinktecture.IdentityModel\Thinktecture.IdentityModel.csproj">
