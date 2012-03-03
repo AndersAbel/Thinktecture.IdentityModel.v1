@@ -240,7 +240,6 @@
       <DependentUpon>ClaimsViewerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Utility\GridClaimsView.cs" />
-    <Compile Include="Utility\Tracing.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Utility\CertificateReference\sample.config" />
