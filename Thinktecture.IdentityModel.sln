@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtractTokenFromRSTR", "Sam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thinktecture.IdentityModel.Samples", "Thinktecture.IdentityModel.Samples\Thinktecture.IdentityModel.Samples.csproj", "{F176B588-79ED-4A59-BF4F-D424387F80A5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Certificates", "Samples\Certificates\Certificates.csproj", "{1238DC45-998C-4BA8-9CF4-49040D33E180}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Analysis (Debug)|Any CPU = Analysis (Debug)|Any CPU
@@ -283,6 +285,26 @@ Global
 		{F176B588-79ED-4A59-BF4F-D424387F80A5}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{F176B588-79ED-4A59-BF4F-D424387F80A5}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{F176B588-79ED-4A59-BF4F-D424387F80A5}.Release|x86.ActiveCfg = Release|Any CPU
+		{1238DC45-998C-4BA8-9CF4-49040D33E180}.Analysis (Debug)|Any CPU.ActiveCfg = Debug|x86
+		{1238DC45-998C-4BA8-9CF4-49040D33E180}.Analysis (Debug)|Mixed Platforms.ActiveCfg = Debug|x86
+		{1238DC45-998C-4BA8-9CF4-49040D33E180}.Analysis (Debug)|Mixed Platforms.Build.0 = Debug|x86
+		{1238DC45-998C-4BA8-9CF4-49040D33E180}.Analysis (Debug)|x86.ActiveCfg = Debug|x86
+		{1238DC45-998C-4BA8-9CF4-49040D33E180}.Analysis (Debug)|x86.Build.0 = Debug|x86
+		{1238DC45-998C-4BA8-9CF4-49040D33E180}.Contracts (Debug)|Any CPU.ActiveCfg = Debug|x86
+		{1238DC45-998C-4BA8-9CF4-49040D33E180}.Contracts (Debug)|Mixed Platforms.ActiveCfg = Debug|x86
+		{1238DC45-998C-4BA8-9CF4-49040D33E180}.Contracts (Debug)|Mixed Platforms.Build.0 = Debug|x86
+		{1238DC45-998C-4BA8-9CF4-49040D33E180}.Contracts (Debug)|x86.ActiveCfg = Debug|x86
+		{1238DC45-998C-4BA8-9CF4-49040D33E180}.Contracts (Debug)|x86.Build.0 = Debug|x86
+		{1238DC45-998C-4BA8-9CF4-49040D33E180}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{1238DC45-998C-4BA8-9CF4-49040D33E180}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{1238DC45-998C-4BA8-9CF4-49040D33E180}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{1238DC45-998C-4BA8-9CF4-49040D33E180}.Debug|x86.ActiveCfg = Debug|x86
+		{1238DC45-998C-4BA8-9CF4-49040D33E180}.Debug|x86.Build.0 = Debug|x86
+		{1238DC45-998C-4BA8-9CF4-49040D33E180}.Release|Any CPU.ActiveCfg = Release|x86
+		{1238DC45-998C-4BA8-9CF4-49040D33E180}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{1238DC45-998C-4BA8-9CF4-49040D33E180}.Release|Mixed Platforms.Build.0 = Release|x86
+		{1238DC45-998C-4BA8-9CF4-49040D33E180}.Release|x86.ActiveCfg = Release|x86
+		{1238DC45-998C-4BA8-9CF4-49040D33E180}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -298,5 +320,6 @@ Global
 		{A4372A2E-E797-4594-8211-37C96F4E7CC4} = {AD6A872A-CCD5-4EBD-8E00-BB44C93C5C3E}
 		{3EDC2D04-1B59-4841-B924-05AA365B1378} = {AD6A872A-CCD5-4EBD-8E00-BB44C93C5C3E}
 		{4F3231A4-4F3E-4E05-9AD8-FA674BF9562E} = {AD6A872A-CCD5-4EBD-8E00-BB44C93C5C3E}
+		{1238DC45-998C-4BA8-9CF4-49040D33E180} = {AD6A872A-CCD5-4EBD-8E00-BB44C93C5C3E}
 	EndGlobalSection
 EndGlobal

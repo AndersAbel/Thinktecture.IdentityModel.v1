@@ -240,6 +240,10 @@
       <DependentUpon>ClaimsViewerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Utility\GridClaimsView.cs" />
+    <Compile Include="X509Certificates\X509.cs" />
+    <Compile Include="X509Certificates\X509CertificatesFinder.cs" />
+    <Compile Include="X509Certificates\X509CertificatesLocation.cs" />
+    <Compile Include="X509Certificates\X509CertificatesName.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Utility\CertificateReference\sample.config" />

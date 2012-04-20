@@ -130,6 +130,18 @@ namespace Thinktecture.IdentityModel.Extensions
         /// Converts a SecurityToken to an IClaimsPrincipal.
         /// </summary>
         /// <param name="token">The token.</param>
+        /// <param name="thumbprint">The signing certificate thumbprint</param>
+        /// <returns>An IClaimsPrincipal</returns>
+        public static IClaimsPrincipal ToClaimsPrincipal(this SecurityToken token, string thumbprint)
+        {
+            var configuration = CreateStandardConfiguration(thumbprint);
+            return token.ToClaimsPrincipal(configuration.CreateDefaultHandlerCollection());
+        }
+
+        /// <summary>
+        /// Converts a SecurityToken to an IClaimsPrincipal.
+        /// </summary>
+        /// <param name="token">The token.</param>
         /// <param name="signingCertificate">The signing certificate.</param>
         /// <param name="audienceUri">The audience URI.</param>
         /// <returns>An IClaimsPrincipal</returns>
@@ -162,6 +174,20 @@ namespace Thinktecture.IdentityModel.Extensions
             configuration.AudienceRestriction.AudienceMode = AudienceUriMode.Never;
             configuration.IssuerNameRegistry = signingCertificate.CreateIssuerNameRegistry();
             configuration.IssuerTokenResolver = signingCertificate.CreateSecurityTokenResolver();
+            configuration.SaveBootstrapTokens = true;
+
+            return configuration;
+        }
+
+        private static SecurityTokenHandlerConfiguration CreateStandardConfiguration(string thumbprint)
+        {
+            var configuration = new SecurityTokenHandlerConfiguration();
+
+            configuration.AudienceRestriction.AudienceMode = AudienceUriMode.Never;
+
+            var registry = new ConfigurationBasedIssuerNameRegistry();
+            registry.AddTrustedIssuer(thumbprint, thumbprint);
+            configuration.IssuerNameRegistry = registry;
             configuration.SaveBootstrapTokens = true;
 
             return configuration;
