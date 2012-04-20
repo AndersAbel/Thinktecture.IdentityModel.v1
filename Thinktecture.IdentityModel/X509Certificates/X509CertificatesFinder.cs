@@ -30,15 +30,7 @@ namespace Thinktecture.IdentityModel.X509Certificates
                 store.Open(OpenFlags.ReadOnly);
 
                 var certColl = store.Certificates.Find(_findType, findValue, validOnly);
-                if (certColl != null && certColl.Count > 0)
-                {
-                    foreach (var cert in certColl)
-                    {
-                        certs.Add(cert);
-                    }
-                }
-
-                return certs;
+                return certColl.Cast<X509Certificate2>();
             }
             finally
             {
