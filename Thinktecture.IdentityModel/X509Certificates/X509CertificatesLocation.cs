@@ -23,12 +23,35 @@ namespace Thinktecture.IdentityModel.X509Certificates
             }
         }
 
-
         public X509CertificatesName AddressBook
         {
             get
             {
                 return new X509CertificatesName(_location, StoreName.AddressBook);
+            }
+        }
+
+        public X509CertificatesName TrustedPeople
+        {
+            get
+            {
+                return new X509CertificatesName(_location, StoreName.TrustedPeople);
+            }
+        }
+
+        public X509CertificatesName TrustedPublisher
+        {
+            get
+            {
+                return new X509CertificatesName(_location, StoreName.TrustedPublisher);
+            }
+        }
+
+        public X509CertificatesName CertificateAuthority
+        {
+            get
+            {
+                return new X509CertificatesName(_location, StoreName.CertificateAuthority);
             }
         }
     }

@@ -20,7 +20,7 @@ namespace Thinktecture.IdentityModel.X509Certificates
             _findType = findType;
         }
 
-        public IEnumerable<X509Certificate2> FindAll(object findValue, bool validOnly = true)
+        public IEnumerable<X509Certificate2> Find(object findValue, bool validOnly = true)
         {
             var certs = new List<X509Certificate2>();
 
@@ -38,9 +38,9 @@ namespace Thinktecture.IdentityModel.X509Certificates
             }
         }
 
-        public X509Certificate2 FindFirst(object findValue, bool validOnly = true)
-        {
-            return FindAll(findValue, validOnly).FirstOrDefault();
-        }
+        //public X509Certificate2 FindFirst(object findValue, bool validOnly = true)
+        //{
+        //    return FindAll(findValue, validOnly).FirstOrDefault();
+        //}
     }
 }

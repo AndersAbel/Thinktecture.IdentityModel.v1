@@ -11,7 +11,7 @@ namespace Certificates
     {
         static void Main(string[] args)
         {
-            var cert = X509.CurrentUser.My.Thumbprint.FindFirst("abc");
+            var cert = X509.CurrentUser.My.Thumbprint.Find("abc");
         }
     }
 }
