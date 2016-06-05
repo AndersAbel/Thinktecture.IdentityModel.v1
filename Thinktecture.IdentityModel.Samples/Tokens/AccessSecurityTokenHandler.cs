@@ -335,8 +335,12 @@ namespace Thinktecture.IdentityModel.Tokens
             var identifier = new X509ThumbprintKeyIdentifierClause(thumbprint);
             var issuerKey = Configuration.IssuerTokenResolver.ResolveToken(identifier) as X509SecurityToken;
 
+
             // check the signature
-            if (!signedXml.CheckSignature(issuerKey.Certificate, true))
+            var referenceUri = ((Reference)signedXml.SignedInfo.References[0]).Uri;
+
+            if (!signedXml.CheckSignature(issuerKey.Certificate, true)
+                || (referenceUri != "" && signedXml.GetIdElement(xmlElement.OwnerDocument, referenceUri) != xmlElement))
             {
                 throw new CryptographicException("Signature verification failed");
             }
